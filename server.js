@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
     });
 });
 
-http.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+http.listen(3000, () => {
+    console.log(`Server is running on port ${3000}`);
 });
 })
