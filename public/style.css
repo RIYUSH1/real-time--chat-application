@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  transition: background 0.3s;
+}
+
+.chat__section {
+  width: 800px;
+  max-width: 95%;
+  background: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.brand {
+  padding: 15px 20px;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #444;
+}
+
+#theme-toggle {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.message__area {
+  height: 500px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+textarea {
+  flex: 1;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  background: #FBFBFB;
+}
+
+#emoji-btn {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+  position: relative;
+  display: inline-block;
+}
+
+.incoming {
+  background: #8f8be8;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.outgoing {
+  background: #e9eafd;
+  color: #333;
+  align-self: flex-end;
+}
+
+.message h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.reactions {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #888;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.dark-mode .chat__section {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .message__area,
+.dark-mode textarea,
+.dark-mode .incoming,
+.dark-mode .outgoing {
+  background-color: #333;
+  color: #eee;
+}

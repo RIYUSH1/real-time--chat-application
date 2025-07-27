@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emoji-mart@latest/css/emoji-mart.css">
+</head>
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img src="/real-time.png" alt="Logo">
+            <h1>Real-Time</h1>
+            <button id="theme-toggle">🌗</button>
+        </div>
+
+        <div class="message__area" id="messageArea"></div>
+
+        <div id="typingIndicator"></div>
+
+        <div class="input-container">
+            <textarea id="textarea" placeholder="Write a message..."></textarea>
+            <button id="emoji-btn">😀</button>
+        </div>
+
+        <div id="emoji-picker" style="display: none;"></div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
